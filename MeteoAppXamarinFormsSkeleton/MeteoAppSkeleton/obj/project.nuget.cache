@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "mZ/iKR4BNvEl3lt1zqOWlE4H4R7Trvv2vjBTrQD/KH6LIlgLpRPbCg63Z5lWb6Kx31cfnUpc2rVi7KF+fah7/Q==",
+  "success": true,
+  "projectFilePath": "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/MeteoAppSkeleton.csproj",
+  "expectedPackageFiles": [
+    "/Users/galliva/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/galliva/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/galliva/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/galliva/.nuget/packages/xamarin.essentials/1.7.1/xamarin.essentials.1.7.1.nupkg.sha512",
+    "/Users/galliva/.nuget/packages/xamarin.forms/5.0.0.2337/xamarin.forms.5.0.0.2337.nupkg.sha512"
+  ],
+  "logs": []
+}

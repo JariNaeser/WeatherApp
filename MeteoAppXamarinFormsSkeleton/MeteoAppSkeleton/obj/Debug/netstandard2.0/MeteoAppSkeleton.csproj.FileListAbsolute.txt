@@ -1,0 +1,31 @@
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/MeteoAppSkeleton.deps.json
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/MeteoAppSkeleton.dll
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/ref/MeteoAppSkeleton.dll
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/MeteoAppSkeleton.pdb
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.csprojAssemblyReference.cache
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/Views/MeteoItemPage.xaml.g.cs
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/Views/MeteoListPage.xaml.g.cs
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.AssemblyInfoInputs.cache
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.AssemblyInfo.cs
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.csproj.CoreCompileInputs.cache
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.dll
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/ref/MeteoAppSkeleton.dll
+/Users/galliva/Desktop/MeteoAppSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.pdb
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/MeteoAppSkeleton.deps.json
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/MeteoAppSkeleton.dll
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/ref/MeteoAppSkeleton.dll
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/MeteoAppSkeleton.pdb
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.csproj.AssemblyReference.cache
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.GeneratedMSBuildEditorConfig.editorconfig
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/Views/MeteoItemPage.xaml.g.cs
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/Views/MeteoListPage.xaml.g.cs
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.AssemblyInfoInputs.cache
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.AssemblyInfo.cs
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.csproj.CoreCompileInputs.cache
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.dll
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/ref/MeteoAppSkeleton.dll
+/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.pdb
