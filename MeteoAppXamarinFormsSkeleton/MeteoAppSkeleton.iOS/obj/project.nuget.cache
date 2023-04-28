@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xemQW7SWpf0ET1avE+eD+IZXqKOms+e9gSmoJKH8wFJp4YGeD2pZAFsi4GwMDPtHHSqlJRLJOgx//48BoEjgjQ==",
+  "dgSpecHash": "NCpJZwneDZGmSp/V1gi66D2s8hZ4jNpH2Ox2YGUx1z7aOljtXmN9A8nxQ9MCV6s7goHTVIKTGDMtqy9q0mLpEg==",
   "success": true,
-  "projectFilePath": "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.iOS/MeteoAppSkeleton.iOS.csproj",
+  "projectFilePath": "/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.iOS/MeteoAppSkeleton.iOS.csproj",
   "expectedPackageFiles": [
-    "/Users/galliva/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
-    "/Users/galliva/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
-    "/Users/galliva/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "/Users/jarinaser/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/jarinaser/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/jarinaser/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": [
     {

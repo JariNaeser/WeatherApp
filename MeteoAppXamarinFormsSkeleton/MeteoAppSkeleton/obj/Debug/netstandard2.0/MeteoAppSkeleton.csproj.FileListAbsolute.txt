@@ -29,3 +29,18 @@
 /Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.dll
 /Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/ref/MeteoAppSkeleton.dll
 /Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.pdb
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/MeteoAppSkeleton.deps.json
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/MeteoAppSkeleton.dll
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/ref/MeteoAppSkeleton.dll
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/bin/Debug/netstandard2.0/MeteoAppSkeleton.pdb
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.csproj.AssemblyReference.cache
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/Views/MeteoItemPage.xaml.g.cs
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/Views/MeteoListPage.xaml.g.cs
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.AssemblyInfoInputs.cache
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.AssemblyInfo.cs
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.csproj.CoreCompileInputs.cache
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.dll
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/ref/MeteoAppSkeleton.dll
+/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/Debug/netstandard2.0/MeteoAppSkeleton.pdb

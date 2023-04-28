@@ -541,19 +541,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/galliva/.nuget/packages/": {}
+    "/Users/jarinaser/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/MeteoAppSkeleton.csproj",
+      "projectUniqueName": "/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/MeteoAppSkeleton.csproj",
       "projectName": "MeteoAppSkeleton",
-      "projectPath": "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/MeteoAppSkeleton.csproj",
-      "packagesPath": "/Users/galliva/.nuget/packages/",
-      "outputPath": "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/",
+      "projectPath": "/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/MeteoAppSkeleton.csproj",
+      "packagesPath": "/Users/jarinaser/.nuget/packages/",
+      "outputPath": "/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/galliva/.config/NuGet/NuGet.Config"
+        "/Users/jarinaser/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -602,7 +602,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/Users/galliva/Library/Caches/VisualStudio/17.0/MSBuild/29683_3/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/jarinaser/Library/Caches/VisualStudio/17.0/MSBuild/20006_3/RuntimeIdentifierGraph.json"
       }
     }
   }

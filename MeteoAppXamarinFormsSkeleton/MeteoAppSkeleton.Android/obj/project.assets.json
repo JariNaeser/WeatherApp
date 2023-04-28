@@ -2342,20 +2342,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/galliva/.nuget/packages/": {}
+    "/Users/jarinaser/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.Android/MeteoAppSkeleton.Android.csproj",
+      "projectUniqueName": "/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.Android/MeteoAppSkeleton.Android.csproj",
       "projectName": "MeteoAppSkeleton.Android",
-      "projectPath": "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.Android/MeteoAppSkeleton.Android.csproj",
-      "packagesPath": "/Users/galliva/.nuget/packages/",
-      "outputPath": "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.Android/obj/",
+      "projectPath": "/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.Android/MeteoAppSkeleton.Android.csproj",
+      "packagesPath": "/Users/jarinaser/.nuget/packages/",
+      "outputPath": "/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/galliva/.config/NuGet/NuGet.Config"
+        "/Users/jarinaser/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid11.0"
@@ -2366,8 +2366,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/MeteoAppSkeleton.csproj": {
-              "projectPath": "/Users/galliva/Library/CloudStorage/Dropbox/01-galliva/Work/SUPSI/0_Corsi/1_Bachelor/2_Mobile/1 Lezioni/6/Progetti/E0 MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/MeteoAppSkeleton.csproj"
+            "/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/MeteoAppSkeleton.csproj": {
+              "projectPath": "/Users/jarinaser/SynologyDrive/Jari/SUPSI/Semestre6/SviluppoMobile/Xamarin/WeatherApp/MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/MeteoAppSkeleton.csproj"
             }
           }
         }

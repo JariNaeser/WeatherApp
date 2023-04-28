@@ -28,7 +28,7 @@ namespace MeteoAppSkeleton.Views
             {
                 Navigation.PushAsync(new MeteoItemPage()
                 {
-                    BindingContext = e.SelectedItem as Models.Entry
+                    BindingContext = e.SelectedItem as Models.Location
                 });
             }
         }

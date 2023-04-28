@@ -5,31 +5,31 @@ namespace MeteoAppSkeleton.ViewModels
 {
     public class MeteoListViewModel : BaseViewModel
     {
-        ObservableCollection<Entry> _entries;
+        ObservableCollection<Location> _locations;
 
-        public ObservableCollection<Entry> Entries
+        public ObservableCollection<Location> Locations
         {
-            get { return _entries; }
+            get { return _locations; }
             set
             {
-                _entries = value;
+                _locations = value;
                 OnPropertyChanged();
             }
         }
 
         public MeteoListViewModel()
         {
-            Entries = new ObservableCollection<Entry>();
+            Locations = new ObservableCollection<Location>();
 
             for (var i = 0; i < 10; i++)
             {
-                var e = new Entry
+                var e = new Location
                 {
                     ID = i,
-                    Name = "Entry " + i
+                    Name = "Location " + i
                 };
 
-                Entries.Add(e);
+                Locations.Add(e);
             }
         }
     }
