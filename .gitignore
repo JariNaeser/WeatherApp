@@ -1,1 +1,4 @@
 .DS_Store
+MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.iOS/obj/*
+MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton/obj/*
+MeteoAppXamarinFormsSkeleton/MeteoAppSkeleton.Android/obj/*

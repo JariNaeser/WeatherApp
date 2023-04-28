@@ -21,6 +21,8 @@ namespace MeteoAppSkeleton.ViewModels
         {
             Locations = new ObservableCollection<Location>();
 
+            // Read locations from database and insert them into _locations
+
             for (var i = 0; i < 10; i++)
             {
                 var e = new Location
