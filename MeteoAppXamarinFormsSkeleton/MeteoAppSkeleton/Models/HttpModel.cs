@@ -9,25 +9,32 @@ namespace MeteoAppSkeleton.Models
 	{
 		private static HttpModel myself;
 
-		public HttpModel getInstance()
+		public static HttpModel GetInstance
 		{
-			if(myself == null)
-			{
-				myself = new HttpModel();
-			}
-			return myself;
-		}
+			get
+			{ 
+				if(myself == null)
+				{
+					myself = new HttpModel();
+				}
+				return myself;
+            }
+        }
 
 		private HttpModel() { }
 
-		public async Task<WeatherCondition> GetAsync(String url)
+		public async Task<string> GetAsync(string url)
 		{
 			// Make request
 			var httpClient = new HttpClient();
-			var jsonResponse = await httpClient.GetStringAsync(url);
+			return await httpClient.GetStringAsync(url);
+        }
 
-			// Parse response
-			return JsonConvert.DeserializeObject<WeatherCondition>(jsonResponse);
+		public WeatherCondition GetWeatherConditionAsync(string url)
+		{
+			string json = GetAsync(url).Result;
+            // Parse response
+            return JsonConvert.DeserializeObject<WeatherCondition>(json);
         }
 	}
 }

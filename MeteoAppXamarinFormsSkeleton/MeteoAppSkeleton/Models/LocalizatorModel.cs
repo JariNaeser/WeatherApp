@@ -10,13 +10,15 @@ namespace MeteoAppSkeleton.Models
 	{
         private static LocalizatorModel myself;
 
-        public LocalizatorModel GetInstance()
+        public static LocalizatorModel GetInstance
         {
-            if(myself == null)
-            {
-                myself = new LocalizatorModel();
+            get { 
+                if(myself == null)
+                {
+                    myself = new LocalizatorModel();
+                }
+                return myself;
             }
-            return myself;
         }
 
 		private LocalizatorModel(){}
