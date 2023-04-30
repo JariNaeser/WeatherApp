@@ -10,6 +10,7 @@ namespace MeteoAppSkeleton.Models
 	public class HttpModel
 	{
 		private static HttpModel myself;
+		private HttpClient httpClient;
 		private const string API_KEY = "2029667e5e8d87ff1f9a29a34238d79f";
 
         public static HttpModel GetInstance
@@ -24,28 +25,32 @@ namespace MeteoAppSkeleton.Models
             }
         }
 
-		private HttpModel() { }
-
-		private async Task<string> GetAsync(string url)
-		{
-			// Make request
-			var httpClient = new HttpClient();
-			return await httpClient.GetStringAsync(url);
+		private HttpModel() {
+			httpClient = new HttpClient();
         }
 
-		private WeatherCondition GetWeatherConditionAsync(string url)
+		private async Task<string> GetRequestAsync(string url)
 		{
-            // Get response
-            var result = Task.Run(async () => await GetAsync(url)).Result;
-
-			return new WeatherCondition(JObject.Parse(result));
+			return await httpClient.GetStringAsync(url);
         }
 
 		public WeatherCondition getWeatherFromLocationAsync(string location)
 		{
 			string query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + API_KEY;
-			return this.GetWeatherConditionAsync(query);
-		}
-	}
+
+            var result = Task.Run(async () => await GetRequestAsync(query)).Result;
+            return new WeatherCondition(JObject.Parse(result));
+        }
+
+		public string getLocationNameFromCoordinates(double lat, double lon)
+		{
+			string query = "https://api.openweathermap.org/geo/1.0/reverse?lat=" + lat + "&lon=" + lon + "&limit=1&appid=" + API_KEY;
+
+			var result = Task.Run(async () => await GetRequestAsync(query)).Result;
+            var jObject = JObject.Parse(result.Replace("[", "").Replace("]", ""));
+            return jObject["name"].ToObject<string>();
+        }
+
+    }
 }
 

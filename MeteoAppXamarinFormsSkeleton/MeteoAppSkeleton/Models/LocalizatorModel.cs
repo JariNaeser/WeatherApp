@@ -3,12 +3,17 @@ using Plugin.Geolocator;
 using System.Diagnostics;
 using Plugin.Geolocator.Abstractions;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Xamarin.Essentials;
+using System.Linq;
 
 namespace MeteoAppSkeleton.Models
 {
 	public class LocalizatorModel
 	{
         private static LocalizatorModel myself;
+        private ObservableCollection<Location> _locations;
+        private HttpModel httpModel;
 
         public static LocalizatorModel GetInstance
         {
@@ -21,10 +26,14 @@ namespace MeteoAppSkeleton.Models
             }
         }
 
-		private LocalizatorModel(){}
+		private LocalizatorModel(){
+            httpModel = HttpModel.GetInstance;
+        }
 
-        public async Task StartListening()
+        public async Task StartListening(ObservableCollection<Location> locations)
         {
+            _locations = locations;
+
             if (CrossGeolocator.Current.IsListening)
                 return;
 
@@ -40,16 +49,11 @@ namespace MeteoAppSkeleton.Models
             var position = e.Position;
 
             // Update current position
+            // Get current Location from list
+            Location myLocation = _locations.FirstOrDefault(l => l.ID == 1);
 
-
-
-
-
-
-
-
-
-            Debug.WriteLine("Current position: Lat: " + position.Latitude + " Long: " + position.Longitude);
+            // Get current location name
+            myLocation.Name = httpModel.getLocationNameFromCoordinates(position.Latitude, position.Longitude);
         }
 
         private void PositionError(object sender, PositionErrorEventArgs e)
