@@ -23,8 +23,11 @@ namespace MeteoAppSkeleton.ViewModels
         {
             Locations = new ObservableCollection<Location>();
 
-            // Read locations from database and insert them into _locations
+            // Start current localization listener
+            LocalizatorModel localizatorModel = LocalizatorModel.GetInstance;
+            _ = localizatorModel.StartListening();
 
+            // Read locations from database and insert them into _locations
             for (var i = 0; i < 10; i++)
             {
                 var e = new Location
@@ -37,9 +40,7 @@ namespace MeteoAppSkeleton.ViewModels
             }
 
             // Test http
-
             HttpModel httpModel = HttpModel.GetInstance;
-
             WeatherCondition weatherInLugano = httpModel.getWeatherFromLocationAsync("Lugano");
         }
     }

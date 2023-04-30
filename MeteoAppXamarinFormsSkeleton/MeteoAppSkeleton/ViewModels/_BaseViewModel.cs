@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using MeteoAppSkeleton.Models;
 
 namespace MeteoAppSkeleton.ViewModels
 {
@@ -9,7 +10,7 @@ namespace MeteoAppSkeleton.ViewModels
 
 		protected BaseViewModel()
 		{
-		}
+        }
 
 		protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
 		{

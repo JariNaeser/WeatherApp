@@ -23,7 +23,7 @@ namespace MeteoAppSkeleton.Models
 
 		private LocalizatorModel(){}
 
-        async Task StartListening()
+        public async Task StartListening()
         {
             if (CrossGeolocator.Current.IsListening)
                 return;
@@ -36,22 +36,20 @@ namespace MeteoAppSkeleton.Models
 
         private void PositionChanged(object sender, PositionEventArgs e)
         {
-
             //If updating the UI, ensure you invoke on main thread
             var position = e.Position;
 
             // Update current position
-            
 
-            /*
-            var output = "Full: Lat: " + position.Latitude + " Long: " + position.Longitude;
-            output += "\n" + $"Time: {position.Timestamp}";
-            output += "\n" + $"Heading: {position.Heading}";
-            output += "\n" + $"Speed: {position.Speed}";
-            output += "\n" + $"Accuracy: {position.Accuracy}";
-            output += "\n" + $"Altitude: {position.Altitude}";
-            output += "\n" + $"Altitude Accuracy: {position.AltitudeAccuracy}";
-            Debug.WriteLine(output);*/
+
+
+
+
+
+
+
+
+            Debug.WriteLine("Current position: Lat: " + position.Latitude + " Long: " + position.Longitude);
         }
 
         private void PositionError(object sender, PositionErrorEventArgs e)
