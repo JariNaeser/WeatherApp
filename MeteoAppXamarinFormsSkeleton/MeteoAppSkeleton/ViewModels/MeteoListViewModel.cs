@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using MeteoAppSkeleton.Models;
 
 namespace MeteoAppSkeleton.ViewModels
@@ -39,14 +40,7 @@ namespace MeteoAppSkeleton.ViewModels
 
             HttpModel httpModel = HttpModel.GetInstance;
 
-            Debug.WriteLine(httpModel.GetAsync("https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=2029667e5e8d87ff1f9a29a34238d79f"));
-
-            // _ = httpModel.GetAsync("https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=2029667e5e8d87ff1f9a29a34238d79f");
-
-            //WeatherCondition weather = httpModel.GetWeatherConditionAsync("https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=2029667e5e8d87ff1f9a29a34238d79f");
-
-            //Debug.WriteLine("Weather: "  + weather);
-
+            WeatherCondition weatherInLugano = httpModel.getWeatherFromLocationAsync("Lugano");
         }
     }
 }
