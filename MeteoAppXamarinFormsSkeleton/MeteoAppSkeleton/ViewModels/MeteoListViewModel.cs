@@ -28,11 +28,13 @@ namespace MeteoAppSkeleton.ViewModels
             _ = localizatorModel.StartListening(_locations);
 
             // Read locations from database and insert them into _locations
-
             Locations.Add(new Location(1, "CurrentPosition"));
-            Locations.Add(new Location(2, "London"));
-            Locations.Add(new Location(3, "Paris"));
-            Locations.Add(new Location(4, "Madrid"));
+
+            // Insert sql commands...
+
+            Locations.Add(new Location("London"));
+            Locations.Add(new Location("Paris"));
+            Locations.Add(new Location("Madrid"));
 
             // Test http
             HttpModel httpModel = HttpModel.GetInstance;

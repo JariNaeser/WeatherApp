@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
+using MeteoAppSkeleton.Models;
 using MeteoAppSkeleton.ViewModels;
 using Xamarin.Forms;
 
@@ -17,9 +20,22 @@ namespace MeteoAppSkeleton.Views
             base.OnAppearing();
         }
 
-        void OnItemAdded(object sender, EventArgs e)
+        async void OnItemAdded(object sender, EventArgs e)
         {
-            DisplayAlert("Messaggio", "Testo", "OK");
+            string newLocationName = await DisplayPromptAsync("Add a new Location", "Insert Location name");
+
+            Location newLocation = new Location(newLocationName);
+
+            // Persist location
+
+            // Add newLocation to database
+
+            // Update _locations in MeteoListViewModel
+        }
+
+        private async Task<string> ShowAddLocationPromptAndGetResponseAsync()
+        {
+            return await DisplayPromptAsync("Add a new Location", "Insert Location name");
         }
 
         void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)

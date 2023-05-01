@@ -7,6 +7,7 @@ namespace MeteoAppSkeleton.Views
         public MeteoItemPage()
         {
             InitializeComponent();
+            
         }
     }
 }

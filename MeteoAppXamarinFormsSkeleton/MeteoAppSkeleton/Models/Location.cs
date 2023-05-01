@@ -1,4 +1,6 @@
-﻿namespace MeteoAppSkeleton.Models
+﻿using System;
+
+namespace MeteoAppSkeleton.Models
 {
     public class Location
     {
@@ -8,6 +10,13 @@
         public Location(int id, string name)
         {
             ID = id;
+            Name = name;
+        }
+
+        public Location(string name)
+        {
+            // Get random UUID
+            ID = Guid.NewGuid().GetHashCode();
             Name = name;
         }
     }
