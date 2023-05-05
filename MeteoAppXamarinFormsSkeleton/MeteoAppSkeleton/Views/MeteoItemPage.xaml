@@ -1,19 +1,122 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MeteoAppSkeleton.Views.MeteoItemPage">
     <ContentPage.Content>
-        <RelativeLayout x:Name="container">
-            <Label Text="{Binding Name}" RelativeLayout.XConstraint="{ConstraintExpression 
-                        Type=RelativeToParent,
-                        Property=Width, 
-                        Factor=0.5,
-                        Constant=-25}"
-                   RelativeLayout.YConstraint=
-                "{ConstraintExpression 
-                        Type=RelativeToParent,
-                        Property=Height,
-                        Factor=0.5,
-                        Constant=-25}"
-            ></Label>
-        </RelativeLayout>
+        <Grid x:Name="container" RowSpacing="0" ColumnSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!-- Upper page part -->
+            <Frame Grid.Column="0" Grid.Row="0" CornerRadius="0" HasShadow="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <!-- Lower part -->
+                    <Frame Grid.Column="0" Grid.Row="1" HasShadow="False">
+                        <Label x:Name="lDescription" FontSize="Title" HorizontalOptions="Center"/>
+                    </Frame>
+
+                    <Grid Grid.Column="0" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Left part - image -->
+                        <Frame Grid.Column="0" Grid.Row="0" HasShadow="False">
+                            <Image x:Name="iMeteo" Aspect="AspectFit"/>
+                        </Frame>
+                       
+                        <!-- Right part - temp data -->
+                        <Grid Grid.Column="1" Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Frame Grid.Column="0" Grid.Row="0" HasShadow="False">
+                                <Label x:Name="lTemperature" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="56" VerticalOptions="End"/>
+                            </Frame>
+
+                            <Grid Grid.Column="0" Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+
+                                <Frame Grid.Column="0" Grid.Row="0" Padding="0" HasShadow="False">
+                                    <Label x:Name="lMinTemperature" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="Large" VerticalOptions="Start"/>
+                                </Frame>
+                                <Frame Grid.Column="1" Grid.Row="0" Padding="0" HasShadow="False">
+                                    <Label x:Name="lMaxTemperature" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="Large" VerticalOptions="Start"/>
+                                </Frame>
+
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <!-- Lower page part -->
+            <Frame Grid.Column="0" Grid.Row="1" HasShadow="False" CornerRadius="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.ColumnSpan="2" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Image Grid.Column="0" Grid.Row="0" x:Name="iFlag" HorizontalOptions="End" VerticalOptions="Start" />
+                        <Label Text="{Binding Name}" Grid.Column="1" Grid.Row="0" FontSize="Large"></Label>
+
+                    </Grid>
+
+                    <!-- Labels -->
+                    <Label Grid.Column="0" Grid.Row="1" FontSize="Large">Pressure: </Label>
+                    <Label Grid.Column="0" Grid.Row="2" FontSize="Large">Humidity: </Label>
+                    <Label Grid.Column="0" Grid.Row="3" FontSize="Large">Sunrise: </Label>
+                    <Label Grid.Column="0" Grid.Row="4" FontSize="Large">Sunset: </Label>
+
+                     <!-- Values -->
+                    <Label x:Name="lPressure" Grid.Column="1" Grid.Row="1" FontSize="Large">XY</Label>
+                    <Label x:Name="lHumidity" Grid.Column="1" Grid.Row="2" FontSize="Large">XY</Label>
+                    <Label x:Name="lSunrise" Grid.Column="1" Grid.Row="3" FontSize="Large">XY</Label>
+                    <Label x:Name="lSunset" Grid.Column="1" Grid.Row="4" FontSize="Large">XY</Label>
+                  
+                </Grid>
+            </Frame>         
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

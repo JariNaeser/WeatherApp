@@ -7,19 +7,19 @@ namespace MeteoAppSkeleton.Models
 	public class WeatherCondition
 	{
         public int Id { get; set; }
-        private String WeatherType { get; set; }
-        private String Description { get; set; }
-        private String Icon { get; set; }
-        private double Temperature { get; set; }
-        private int Pressure { get; set; }
-        private int Humidity { get; set; }
-        private double MinTemperature { get; set; }
-        private double MaxTemperature { get; set; }
-        private String CityName { get; set; }
-        private String CountryCode { get; set; }
-        private long Sunrise { get; set; }
-        private long Sunset { get; set; }
-        private double WindSpeed { get; set; }
+        public String WeatherType { get; set; }
+        public String Description { get; set; }
+        public String Icon { get; set; }
+        public double Temperature { get; set; }
+        public int Pressure { get; set; }
+        public int Humidity { get; set; }
+        public double MinTemperature { get; set; }
+        public double MaxTemperature { get; set; }
+        public String CityName { get; set; }
+        public String CountryCode { get; set; }
+        public long Sunrise { get; set; }
+        public long Sunset { get; set; }
+        public double WindSpeed { get; set; }
 
         public WeatherCondition(int id, String weatherType, String description,
                              String icon, double temperature, int pressure,

@@ -1,11 +1,25 @@
 ﻿<Properties StartupConfiguration="{0C916022-D594-4002-8F4A-460E8F08C373}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.MeteoAppSkeleton.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E8385FC8-435F-4514-9272-143076C59601" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MeteoAppSkeleton/ViewModels/MeteoListViewModel.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_2_API_28" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.MeteoAppSkeleton.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MeteoAppSkeleton/Views/MeteoListPage.xaml.cs">
     <Files>
-      <File FileName="MeteoAppSkeleton/ViewModels/MeteoListViewModel.cs" Line="43" Column="1" />
-      <File FileName="MeteoAppSkeleton/Models/HttpModel.cs" Line="42" Column="32" />
-      <File FileName="MeteoAppSkeleton/Models/WeatherCondition.cs" Line="22" Column="47" />
+      <File FileName="MeteoAppSkeleton/Views/MeteoItemPage.xaml.cs" Line="10" Column="13" />
+      <File FileName="MeteoAppSkeleton/Views/MeteoListPage.xaml.cs" Line="14" Column="35" />
+      <File FileName="MeteoAppSkeleton/ViewModels/MeteoListViewModel.cs" Line="8" Column="36" />
+      <File FileName="MeteoAppSkeleton/Models/Location.cs" Line="22" Column="6" />
+      <File FileName="MeteoAppSkeleton/Models/LocalizatorModel.cs" Line="1" Column="1" />
+      <File FileName="MeteoAppSkeleton/Models/WeatherCondition.cs" Line="1" Column="1" />
+      <File FileName="MeteoAppSkeleton/Models/HttpModel.cs" Line="41" Column="83" />
+      <File FileName="MeteoAppSkeleton.iOS/Main.cs" Line="21" Column="1" />
+      <File FileName="MeteoAppSkeleton/Views/MeteoItemPage.xaml" Line="1" Column="1" />
+      <File FileName="MeteoAppSkeleton/Views/MeteoListPage.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,9 +27,7 @@
           <Node name="MeteoAppSkeleton" expanded="True">
             <Node name="MeteoAppSkeleton" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="MeteoListViewModel.cs" selected="True" />
-              </Node>
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="MeteoItemPage.xaml" expanded="True" />
                 <Node name="MeteoListPage.xaml" expanded="True" />
@@ -23,19 +35,10 @@
               <Node name="App.xaml" expanded="True" />
             </Node>
             <Node name="MeteoAppSkeleton.Android" expanded="True" />
+            <Node name="MeteoAppSkeleton.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MeteoAppSkeleton.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_2_API_28" />
 </Properties>

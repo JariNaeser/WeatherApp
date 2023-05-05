@@ -6,6 +6,7 @@ namespace MeteoAppSkeleton.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public WeatherCondition Weather { get; set; }
 
         public Location(int id, string name)
         {

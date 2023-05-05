@@ -36,7 +36,7 @@ namespace MeteoAppSkeleton.Models
 
 		public WeatherCondition getWeatherFromLocationAsync(string location)
 		{
-			string query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + API_KEY;
+			string query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=metric&appid=" + API_KEY;
 
             var result = Task.Run(async () => await GetRequestAsync(query)).Result;
             return new WeatherCondition(JObject.Parse(result));

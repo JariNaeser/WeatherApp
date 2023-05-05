@@ -27,11 +27,10 @@ namespace MeteoAppSkeleton.ViewModels
             LocalizatorModel localizatorModel = LocalizatorModel.GetInstance;
             _ = localizatorModel.StartListening(_locations);
 
-            // Read locations from database and insert them into _locations
+            // Add location that will be replaced with the current one
             Locations.Add(new Location(1, "CurrentPosition"));
 
-            // Insert sql commands...
-
+            // Read locations from database and insert them into _locations
             Locations.Add(new Location("London"));
             Locations.Add(new Location("Paris"));
             Locations.Add(new Location("Madrid"));
