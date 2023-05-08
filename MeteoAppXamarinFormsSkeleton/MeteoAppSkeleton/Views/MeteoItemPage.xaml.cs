@@ -11,6 +11,7 @@ namespace MeteoAppSkeleton.Views
 
         private Location SelectedLocation { get; set; }
         private HttpModel httpModel;
+        WeatherCondition weather;
 
         public MeteoItemPage()
         {
@@ -25,20 +26,22 @@ namespace MeteoAppSkeleton.Views
             // Get selected Location
             SelectedLocation = BindingContext as Location;
             // Get weatherCondition in selected Location
-            SelectedLocation.Weather = httpModel.getWeatherFromLocationAsync(SelectedLocation.Name);
+            
+            weather = httpModel.getWeatherFromLocationAsync(SelectedLocation.Name);
           
             // Set text on UI
-            lDescription.Text = SelectedLocation.Weather.Description;
-            lTemperature.Text = Round(SelectedLocation.Weather.Temperature) + " °C";
-            lMinTemperature.Text = "Min: " + Round(SelectedLocation.Weather.MinTemperature) + "°";
-            lMaxTemperature.Text = "Max: " + Round(SelectedLocation.Weather.MaxTemperature) + "°";
-            lPressure.Text = SelectedLocation.Weather.Pressure + " [Pa]";
-            lHumidity.Text = SelectedLocation.Weather.Humidity + " %";
-            lSunrise.Text = FormatDate(SelectedLocation.Weather.Sunrise);
-            lSunset.Text = FormatDate(SelectedLocation.Weather.Sunset);
+            lDescription.Text = weather.Description;
+            lTemperature.Text = Round(weather.Temperature) + " °C";
+            lMinTemperature.Text = "Min: " + Round(weather.MinTemperature) + "°";
+            lMaxTemperature.Text = "Max: " + Round(weather.MaxTemperature) + "°";
+            lPressure.Text = weather.Pressure + " [Pa]";
+            lHumidity.Text = weather.Humidity + " %";
+            lSunrise.Text = FormatDate(weather.Sunrise);
+            lSunset.Text = FormatDate(weather.Sunset);
             // Images
-            iMeteo.Source = "http://openweathermap.org/img/wn/" + SelectedLocation.Weather.Icon + "@4x.png";
-            iFlag.Source = "https://flagsapi.com/" + SelectedLocation.Weather.CountryCode.ToUpper() + "/flat/64.png";
+            iMeteo.Source = "http://openweathermap.org/img/wn/" + weather.Icon + "@4x.png";
+            iFlag.Source = "https://flagsapi.com/" + weather.CountryCode.ToUpper() + "/flat/64.png";
+            
         }
 
         private int Round(double number)

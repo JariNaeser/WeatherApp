@@ -1,24 +1,23 @@
 ﻿using System;
+using SQLite;
 
 namespace MeteoAppSkeleton.Models
 {
     public class Location
     {
-        public int ID { get; set; }
+        
+        public int Id { get; set; }
+
         public string Name { get; set; }
-        public WeatherCondition Weather { get; set; }
 
-        public Location(int id, string name)
-        {
-            ID = id;
-            Name = name;
-        }
+        //public WeatherCondition Weather { get; set; }
 
-        public Location(string name)
+        public Location()
         {
             // Get random UUID
-            ID = Guid.NewGuid().GetHashCode();
-            Name = name;
+            Id = Guid.NewGuid().GetHashCode();
+           //Weather = null;
+          
         }
     }
 }

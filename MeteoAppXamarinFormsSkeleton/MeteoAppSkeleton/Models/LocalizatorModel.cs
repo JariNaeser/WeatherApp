@@ -50,7 +50,7 @@ namespace MeteoAppSkeleton.Models
 
             // Update current position
             // Get current Location from list
-            Location myLocation = _locations.FirstOrDefault(l => l.ID == 1);
+            Location myLocation = _locations.FirstOrDefault(l => l.Id == 1);
 
             // Get current location name
             myLocation.Name = httpModel.getLocationNameFromCoordinates(position.Latitude, position.Longitude);
