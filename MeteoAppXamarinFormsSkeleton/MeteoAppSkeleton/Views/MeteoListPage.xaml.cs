@@ -20,23 +20,19 @@ namespace MeteoAppSkeleton.Views
             InitializeComponent();
             meteo = new MeteoListViewModel();
             BindingContext = meteo;
-            
         }
 
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-           
         }
 
-        private  void OnDeleteClicked(object sender, EventArgs e)
+        private async void OnDeleteClicked(object sender, EventArgs e)
         {
-
-            var location = (Location)((Button)sender).CommandParameter;
-            meteo.Locations.Remove(location);
-            App.Database.DeleteItemAsync(location);
-
+            var locationToRemove = (Location)((Button)sender).CommandParameter;
+            meteo.Locations.Remove(locationToRemove);
+            await App.Database.DeleteItemAsync(locationToRemove);
         }
 
 
@@ -44,21 +40,15 @@ namespace MeteoAppSkeleton.Views
         {
             string newLocationName = await DisplayPromptAsync("Add a new Location", "Insert Location name");
 
-           Location newLocation = new Location {  Name = newLocationName };
-
-            Console.WriteLine(newLocation.Id);
-
-            // Persist location
+            Location newLocation = new Location {  Name = newLocationName };
 
             // Add newLocation to database
 
             await App.Database.SaveItemAsync(newLocation);
 
-            // Update _locations in MeteoListViewModel
+            // Add newLocation to _locations in MeteoListViewModel
 
             meteo.Locations.Add(newLocation);
-
-            
         }
 
         private async Task<string> ShowAddLocationPromptAndGetResponseAsync()
@@ -76,8 +66,5 @@ namespace MeteoAppSkeleton.Views
                 });
             }
         }
-
-
-
-        }
+    }
 }

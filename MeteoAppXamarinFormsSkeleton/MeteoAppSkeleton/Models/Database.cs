@@ -78,8 +78,7 @@ namespace MeteoAppSkeleton
          */
         public async Task<int> DeleteItemAsync(Location item)
         {
-            Console.WriteLine(item.Id + "----" + item.Name);
-            return await database.DeleteAsync(item.Id);
+            return await database.DeleteAsync(item);
         }
     }
 }
