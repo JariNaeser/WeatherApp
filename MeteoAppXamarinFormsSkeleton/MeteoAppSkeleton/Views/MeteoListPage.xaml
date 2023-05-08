@@ -1,25 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MeteoAppSkeleton.Views.MeteoListPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:converters="clr-namespace:MeteoAppSkeleton.Helper" x:Class="MeteoAppSkeleton.Views.MeteoListPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:IconLinkConverter x:Key="iconLinkConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+" Clicked="OnItemAdded">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
-        <On Platform="Android, UWP" Value="plus.png" />
-    </OnPlatform>
+                    <On Platform="Android, UWP" Value="plus.png" />
+                </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
-<ListView x:Name="listView" Margin="10" ItemSelected="OnListItemSelected" ItemsSource="{Binding Locations}">
-    <ListView.ItemTemplate>
-        <DataTemplate>
-            <ViewCell>
-                <StackLayout Margin="0,2,0,2" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                    <Image Margin="0,0,10,0" Source="https://scied.ucar.edu/sites/default/files/styles/half_width/public/2021-10/cumulus-clouds.jpg.webp?itok=HkQfuWxM"/>
-                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
-                    <Button Text="X" Clicked="OnDeleteClicked" CommandParameter="{Binding .}" BackgroundColor="Silver" TextColor="Black"/>
-                </StackLayout>
-            </ViewCell>
-        </DataTemplate>
-    </ListView.ItemTemplate>
-</ListView>
+    <ListView x:Name="listView" Margin="10" ItemSelected="OnListItemSelected" ItemsSource="{Binding Locations}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="0,2,0,2" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Image Margin="0,0,10,0" Source="{Binding Name, Converter={StaticResource iconLinkConverter}}"/>
+                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                        <Button Text="X" Clicked="OnDeleteClicked" CommandParameter="{Binding .}" BackgroundColor="Silver" TextColor="Black"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

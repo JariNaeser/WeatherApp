@@ -110,10 +110,10 @@
                     <Label Grid.Column="0" Grid.Row="4" FontSize="Large">Sunset: </Label>
 
                      <!-- Values -->
-                    <Label x:Name="lPressure" Grid.Column="1" Grid.Row="1" FontSize="Large">XY</Label>
-                    <Label x:Name="lHumidity" Grid.Column="1" Grid.Row="2" FontSize="Large">XY</Label>
-                    <Label x:Name="lSunrise" Grid.Column="1" Grid.Row="3" FontSize="Large">XY</Label>
-                    <Label x:Name="lSunset" Grid.Column="1" Grid.Row="4" FontSize="Large">XY</Label>
+                    <Label x:Name="lPressure" Grid.Column="1" Grid.Row="1" FontSize="Large">-</Label>
+                    <Label x:Name="lHumidity" Grid.Column="1" Grid.Row="2" FontSize="Large">-</Label>
+                    <Label x:Name="lSunrise" Grid.Column="1" Grid.Row="3" FontSize="Large">-</Label>
+                    <Label x:Name="lSunset" Grid.Column="1" Grid.Row="4" FontSize="Large">-</Label>
                   
                 </Grid>
             </Frame>         
