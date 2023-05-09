@@ -55,14 +55,8 @@ namespace MeteoAppSkeleton.Views
             if (SelectedLocation.Name.Equals("CurrentPosition") && Round(weather.Temperature) >= 0)
             {
                 _ = ShowNotification(SelectedLocation.Name,Round(weather.Temperature));
-
             }
-
-
-
-            
         }
-
         
         private int Round(double number)
         {
@@ -71,8 +65,6 @@ namespace MeteoAppSkeleton.Views
 
         private async Task ShowNotification(string nameLocation,int temperature)
         {
-
-
             if (await LocalNotificationCenter.Current.AreNotificationsEnabled() == false)
             {
                 await LocalNotificationCenter.Current.RequestNotificationPermission();
@@ -85,9 +77,10 @@ namespace MeteoAppSkeleton.Views
                 Description = nameLocation + "si percepiscono :" + temperature,
                 ReturningData = "Dummy data", // Returning data when tapped on notification.
                 Schedule =
-            {
-        NotifyTime = DateTime.Now.AddSeconds(3) // Used for Scheduling local notification, if not specified notification will show immediately.
-            }
+                {
+                    // Used for Scheduling local notification, if not specified notification will show immediately.
+                    NotifyTime = DateTime.Now.AddSeconds(3) 
+                }
             };
 
             await LocalNotificationCenter.Current.Show(notification);
@@ -99,8 +92,6 @@ namespace MeteoAppSkeleton.Views
             dateTime = dateTime.AddSeconds(unixMillis).ToLocalTime();
             return dateTime;
         }
-
-
 
         private string FormatDate(long unixMillis)
         {

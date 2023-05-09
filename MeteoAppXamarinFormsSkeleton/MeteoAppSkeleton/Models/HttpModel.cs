@@ -38,6 +38,8 @@ namespace MeteoAppSkeleton.Models
 		{
 			string query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=metric&appid=" + API_KEY;
 
+			if (location.Equals("")) return null;
+
             var result = Task.Run(async () => await GetRequestAsync(query)).Result;
             return new WeatherCondition(JObject.Parse(result));
         }
