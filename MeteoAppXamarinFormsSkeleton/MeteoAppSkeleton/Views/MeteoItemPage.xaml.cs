@@ -1,8 +1,16 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using MeteoAppSkeleton.Models;
+using Plugin.LocalNotification;
 using Xamarin.Forms;
 using static System.Net.WebRequestMethods;
+
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Drawing;
 
 namespace MeteoAppSkeleton.Views
 {
@@ -26,6 +34,8 @@ namespace MeteoAppSkeleton.Views
             // Get selected Location
             SelectedLocation = BindingContext as Location;
             // Get weatherCondition in selected Location
+
+            Console.WriteLine(SelectedLocation.Name);
             
             weather = httpModel.getWeatherFromLocationAsync(SelectedLocation.Name);
           
@@ -41,12 +51,46 @@ namespace MeteoAppSkeleton.Views
             // Images
             iMeteo.Source = "http://openweathermap.org/img/wn/" + weather.Icon + "@4x.png";
             iFlag.Source = "https://flagsapi.com/" + weather.CountryCode.ToUpper() + "/flat/64.png";
+
+            if (SelectedLocation.Name.Equals("CurrentPosition") && Round(weather.Temperature) >= 0)
+            {
+                _ = ShowNotification(SelectedLocation.Name,Round(weather.Temperature));
+
+            }
+
+
+
             
         }
 
+        
         private int Round(double number)
         {
             return (int)(number + 0.5);
+        }
+
+        private async Task ShowNotification(string nameLocation,int temperature)
+        {
+
+
+            if (await LocalNotificationCenter.Current.AreNotificationsEnabled() == false)
+            {
+                await LocalNotificationCenter.Current.RequestNotificationPermission();
+            }
+
+            var notification = new NotificationRequest
+            {
+                NotificationId = 100,
+                Title = "WeatherApp",
+                Description = nameLocation + "si percepiscono :" + temperature,
+                ReturningData = "Dummy data", // Returning data when tapped on notification.
+                Schedule =
+            {
+        NotifyTime = DateTime.Now.AddSeconds(3) // Used for Scheduling local notification, if not specified notification will show immediately.
+            }
+            };
+
+            await LocalNotificationCenter.Current.Show(notification);
         }
 
         private DateTime CreateDateFromMillis(long unixMillis)
@@ -55,6 +99,8 @@ namespace MeteoAppSkeleton.Views
             dateTime = dateTime.AddSeconds(unixMillis).ToLocalTime();
             return dateTime;
         }
+
+
 
         private string FormatDate(long unixMillis)
         {

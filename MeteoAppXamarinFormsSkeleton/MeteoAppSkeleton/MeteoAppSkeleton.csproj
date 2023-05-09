@@ -17,6 +17,8 @@
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="Plugin.Notifications" Version="4.0.2" />
+    <PackageReference Include="Plugin.LocalNotification" Version="10.1.4" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
