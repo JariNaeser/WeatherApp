@@ -22,7 +22,7 @@ Lastly, the first location is automatically generated, it displays the weather i
 <br>
 
 <p align="center">
-	<img src="img/ListView.PNG">
+	<img src="img/ListView.png">
 </p>
 
 #### Add Location
@@ -30,7 +30,7 @@ Lastly, the first location is automatically generated, it displays the weather i
 In the Add Location View it is possible to add a new location to track by inserting its name.
 
 <p align="center">
-	<img src="img/AddItemView.PNG">
+	<img src="img/AddItemView.png">
 </p>
 
 #### View Location
@@ -38,7 +38,7 @@ In the Add Location View it is possible to add a new location to track by insert
 When Viewing a Location, we can see all of the data relative to its weather.
 
 <p align="center">
-	<img src="img/ListItemView.PNG">
+	<img src="img/ListItemView.png">
 </p>
 
 
